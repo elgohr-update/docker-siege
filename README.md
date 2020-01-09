@@ -21,5 +21,5 @@ docker run --rm -t issogr/siege -h
 ### Performance test
 
 ```console
-docker run --rm -t yokogawa/siege -d1 -r10 -c25 example.com
+docker run --rm -t issogr/siege -d1 -r10 -c25 example.com
 ```
