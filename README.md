@@ -1,52 +1,25 @@
-Docker Image for [Siege](http://www.joedog.org/siege-home/)
-====
+# Docker Image for [Siege](http://www.joedog.org/siege-home/)
 
-How to use.
-----
+![icon](https://raw.githubusercontent.com/Issogr/docker-siege/master/icon.png)
 
-### setup
+## How to use
+
+### Setup
 
 ```console
-$ git clone https://github.com/yokogawa-k/docker-siege.git
-$ cd docker-siege
-$ docker build -t yokogawa/siege .
+git clone https://github.com/issogr/docker-siege.git
+cd docker-siege
+docker build -t issogr/siege .
 ```
 
-### help
+### Help
 
 ```console
-$ docker run --rm -t yokogawa/siege
-```
-
-If you use `./run` script.
-
-```console
-$ ./run
+docker run --rm -t issogr/siege -h
 ```
 
 ### Performance test
 
 ```console
-$ docker run --rm -t yokogawa/siege -d1 -r10 -c25 example.com
+docker run --rm -t yokogawa/siege -d1 -r10 -c25 example.com
 ```
-
-If you use `./run` script.
-
-```console
-$ ./run -d1 -r10 -c25 example.com
-```
-
-### use bash
-
-```console
-$ ./run bash
-```
-
-fig
-----
-
-```console
-$ fig up -d
-$ fig logs
-```
-

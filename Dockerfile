@@ -1,13 +1,10 @@
-FROM ubuntu:latest
-MAINTAINER Kazuya Yokogawa "yokogawa-k@klab.com"
+FROM bitnami/minideb:buster
+LABEL maintainer="grossisimone@outlook.it"
 
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update \
-    && apt-get --no-install-recommends -y install \
-    siege \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists 
+RUN apt-get update
+RUN apt-get --no-install-recommends -y install siege
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["siege"]
 CMD ["--help"]
-
