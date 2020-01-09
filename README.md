@@ -1,6 +1,6 @@
 # Docker Image for [Siege](http://www.joedog.org/siege-home/)
 
-![icon](https://raw.githubusercontent.com/Issogr/docker-siege/master/icon.png)
+![icon](https://raw.githubusercontent.com/Issogr/docker-siege/master/catapult.png)
 
 ## How to use
 
